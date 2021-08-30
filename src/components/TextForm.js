@@ -103,14 +103,14 @@ export default function TextForm(props) {
             text.split(/\s+/).filter((element) => {
               return element.length !== 0;
             }).length
-          }{" "}
+          }
           words and {text.length} characters
         </p>
         <p>
           {0.008 *
-            text.split(" ").filter((element) => {
+            text.split(/\s+/).filter((element) => {
               return element.length !== 0;
-            }).length}{" "}
+            }).length}
           Minutes read
         </p>
         <h2>Preview</h2>
